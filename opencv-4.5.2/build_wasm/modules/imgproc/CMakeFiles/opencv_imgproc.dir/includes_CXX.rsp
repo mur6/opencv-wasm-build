@@ -1,0 +1,1 @@
+-I/src/opencv-4.5.2/modules/imgproc/include -I/src/build_wasm/modules/imgproc -I/src/opencv-4.5.2/modules/core/include -isystem /src/build_wasm 

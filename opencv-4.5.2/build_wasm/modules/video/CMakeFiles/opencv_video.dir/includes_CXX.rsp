@@ -1,0 +1,1 @@
+-I/src/opencv-4.5.2/modules/video/include -I/src/build_wasm/modules/video -I/src/opencv-4.5.2/modules/core/include -I/src/opencv-4.5.2/modules/flann/include -I/src/opencv-4.5.2/modules/imgproc/include -I/src/opencv-4.5.2/modules/dnn/include -I/src/opencv-4.5.2/modules/features2d/include -I/src/opencv-4.5.2/modules/calib3d/include -isystem /src/build_wasm 
