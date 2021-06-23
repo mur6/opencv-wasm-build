@@ -1,0 +1,467 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 5.10.25-linuxkit - x86_64
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0519/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0519.dir/build.make CMakeFiles/cmTC_b0519.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0519.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_b0519.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b0519.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0519.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_b0519.dir/objects1.rsp  -o cmTC_b0519.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7efd7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7efd7.dir/build.make CMakeFiles/cmTC_7efd7.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7efd7.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_7efd7.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7efd7.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7efd7.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_7efd7.dir/objects1.rsp  -o cmTC_7efd7.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e929/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e929.dir/build.make CMakeFiles/cmTC_2e929.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e929.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_2e929.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2e929.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e929.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_2e929.dir/objects1.rsp  -o cmTC_2e929.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the memalign exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b1adb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1adb.dir/build.make CMakeFiles/cmTC_b1adb.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1adb.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_b1adb.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b1adb.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1adb.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_b1adb.dir/objects1.rsp  -o cmTC_b1adb.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_effc0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_effc0.dir/build.make CMakeFiles/cmTC_effc0.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_effc0.dir/CheckFunctionExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_effc0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_effc0.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_effc0.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_effc0.dir/objects1.rsp  -o cmTC_effc0.js 
+wasm-ld: warning: function signature mismatch: fseeko
+>>> defined as () -> i32 in CMakeFiles/cmTC_effc0.dir/CheckFunctionExists.c.o
+>>> defined as (i32, i64, i32) -> i32 in /emsdk/upstream/emscripten/cache/wasm/libc.a(fseek.o)
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_48cf1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_48cf1.dir/build.make CMakeFiles/cmTC_48cf1.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48cf1.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_48cf1.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_48cf1.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48cf1.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_48cf1.dir/objects1.rsp  -o cmTC_48cf1.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0344a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0344a.dir/build.make CMakeFiles/cmTC_0344a.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0344a.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_0344a.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0344a.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0344a.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_0344a.dir/objects1.rsp  -o cmTC_0344a.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57a0c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57a0c.dir/build.make CMakeFiles/cmTC_57a0c.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57a0c.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_57a0c.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_57a0c.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57a0c.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_57a0c.dir/objects1.rsp  -o cmTC_57a0c.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94555/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94555.dir/build.make CMakeFiles/cmTC_94555.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94555.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_94555.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_94555.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94555.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_94555.dir/objects1.rsp  -o cmTC_94555.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_516ea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_516ea.dir/build.make CMakeFiles/cmTC_516ea.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_516ea.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_516ea.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_516ea.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_516ea.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_516ea.dir/objects1.rsp  -o cmTC_516ea.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4115/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4115.dir/build.make CMakeFiles/cmTC_c4115.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4115.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_c4115.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c4115.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4115.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_c4115.dir/objects1.rsp  -o cmTC_c4115.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5db81/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5db81.dir/build.make CMakeFiles/cmTC_5db81.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5db81.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_5db81.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5db81.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5db81.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_5db81.dir/objects1.rsp  -o cmTC_5db81.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed269/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed269.dir/build.make CMakeFiles/cmTC_ed269.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed269.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_ed269.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ed269.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed269.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_ed269.dir/objects1.rsp  -o cmTC_ed269.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file math.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae0d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae0d4.dir/build.make CMakeFiles/cmTC_ae0d4.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae0d4.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_ae0d4.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ae0d4.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae0d4.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_ae0d4.dir/objects1.rsp  -o cmTC_ae0d4.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d2cf3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d2cf3.dir/build.make CMakeFiles/cmTC_d2cf3.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2cf3.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_d2cf3.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d2cf3.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2cf3.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_d2cf3.dir/objects1.rsp  -o cmTC_d2cf3.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee456/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee456.dir/build.make CMakeFiles/cmTC_ee456.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee456.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_ee456.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ee456.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee456.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_ee456.dir/objects1.rsp  -o cmTC_ee456.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_48b50/fast"
+/usr/bin/make -f CMakeFiles/cmTC_48b50.dir/build.make CMakeFiles/cmTC_48b50.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48b50.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_48b50.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_48b50.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48b50.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_48b50.dir/objects1.rsp  -o cmTC_48b50.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file ctype.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3e751/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e751.dir/build.make CMakeFiles/cmTC_3e751.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e751.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_3e751.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3e751.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e751.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_3e751.dir/objects1.rsp  -o cmTC_3e751.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_932e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_932e2.dir/build.make CMakeFiles/cmTC_932e2.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_932e2.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_932e2.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_932e2.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_932e2.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_932e2.dir/objects1.rsp  -o cmTC_932e2.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4974d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4974d.dir/build.make CMakeFiles/cmTC_4974d.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4974d.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_4974d.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4974d.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4974d.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_4974d.dir/objects1.rsp  -o cmTC_4974d.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0bc89/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0bc89.dir/build.make CMakeFiles/cmTC_0bc89.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0bc89.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_0bc89.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0bc89.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bc89.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_0bc89.dir/objects1.rsp  -o cmTC_0bc89.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6a9a5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a9a5.dir/build.make CMakeFiles/cmTC_6a9a5.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a9a5.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_6a9a5.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6a9a5.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a9a5.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_6a9a5.dir/objects1.rsp  -o cmTC_6a9a5.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c37c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c37c5.dir/build.make CMakeFiles/cmTC_c37c5.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c37c5.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_c37c5.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c37c5.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c37c5.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_c37c5.dir/objects1.rsp  -o cmTC_c37c5.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_401d9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_401d9.dir/build.make CMakeFiles/cmTC_401d9.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_401d9.dir/CheckIncludeFile.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_401d9.dir/CheckIncludeFile.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_401d9.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_401d9.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_401d9.dir/objects1.rsp  -o cmTC_401d9.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if files malloc.h exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_263ea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_263ea.dir/build.make CMakeFiles/cmTC_263ea.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_263ea.dir/OPJ_HAVE_MALLOC_H.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_263ea.dir/OPJ_HAVE_MALLOC_H.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CheckIncludeFiles/OPJ_HAVE_MALLOC_H.c
+Linking C executable cmTC_263ea.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_263ea.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_263ea.dir/objects1.rsp  -o cmTC_263ea.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0837/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0837.dir/build.make CMakeFiles/cmTC_b0837.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0837.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc -D_POSIX_C_SOURCE=200112L  -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_b0837.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b0837.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0837.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_b0837.dir/objects1.rsp  -o cmTC_b0837.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the memalign exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_826ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_826ff.dir/build.make CMakeFiles/cmTC_826ff.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_826ff.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_826ff.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_826ff.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_826ff.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_826ff.dir/objects1.rsp  -o cmTC_826ff.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef memalign
+  return ((int*)(&memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fbe5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fbe5.dir/build.make CMakeFiles/cmTC_1fbe5.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fbe5.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes -Wno-shadow -Wno-unused-function  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_1fbe5.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1fbe5.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fbe5.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes -Wno-shadow -Wno-unused-function  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_1fbe5.dir/objects1.rsp  -o cmTC_1fbe5.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

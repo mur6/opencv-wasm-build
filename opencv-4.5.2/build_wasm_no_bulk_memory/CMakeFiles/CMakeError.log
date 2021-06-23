@@ -1,0 +1,227 @@
+Compilation failed:
+    source file: '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option  -pthread'
+===== BUILD LOG =====
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8138/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8138.dir/build.make CMakeFiles/cmTC_c8138.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8138.dir/src.cxx.o
+/emsdk/upstream/emscripten/em++    -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"  -DNDEBUG -O2   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -pthread -std=c++11 -o CMakeFiles/cmTC_c8138.dir/src.cxx.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx
+clang-12: error: invalid argument '-pthread' not allowed with '-mno-bulk-memory'
+em++: error: '/emsdk/upstream/bin/clang++ -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/libcxx -Xclang -iwithsysroot/lib/libcxxabi/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -DNDEBUG -O2 -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -pthread -std=c++11 -o CMakeFiles/cmTC_c8138.dir/src.cxx.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx -c -o CMakeFiles/cmTC_c8138.dir/src.cxx.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_c8138.dir/build.make:66: CMakeFiles/cmTC_c8138.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c8138/fast] Error 2
+
+===== END =====
+
+Compilation failed:
+    source file: '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option  -pthread'
+===== BUILD LOG =====
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1520c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1520c.dir/build.make CMakeFiles/cmTC_1520c.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1520c.dir/src.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"  -DNDEBUG -O2   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -pthread -o CMakeFiles/cmTC_1520c.dir/src.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c
+clang-12: error: invalid argument '-pthread' not allowed with '-mno-bulk-memory'
+emcc: error: '/emsdk/upstream/bin/clang -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -DNDEBUG -O2 -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -pthread -o CMakeFiles/cmTC_1520c.dir/src.c.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c -c -o CMakeFiles/cmTC_1520c.dir/src.c.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_1520c.dir/build.make:66: CMakeFiles/cmTC_1520c.dir/src.c.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1520c/fast] Error 2
+
+===== END =====
+
+Compilation failed:
+    source file: '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections   -mfpmath=387'
+===== BUILD LOG =====
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a8779/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a8779.dir/build.make CMakeFiles/cmTC_a8779.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a8779.dir/src.cxx.o
+/emsdk/upstream/emscripten/em++    -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"  -DNDEBUG -O2   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -mfpmath=387 -std=c++11 -o CMakeFiles/cmTC_a8779.dir/src.cxx.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx
+error: unknown FP unit '387'
+em++: error: '/emsdk/upstream/bin/clang++ -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/libcxx -Xclang -iwithsysroot/lib/libcxxabi/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -DNDEBUG -O2 -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -mfpmath=387 -std=c++11 -o CMakeFiles/cmTC_a8779.dir/src.cxx.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.cxx -c -o CMakeFiles/cmTC_a8779.dir/src.cxx.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_a8779.dir/build.make:66: CMakeFiles/cmTC_a8779.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a8779/fast] Error 2
+
+===== END =====
+
+Compilation failed:
+    source file: '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections   -mfpmath=387'
+===== BUILD LOG =====
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_38eca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38eca.dir/build.make CMakeFiles/cmTC_38eca.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38eca.dir/src.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"  -DNDEBUG -O2   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -mfpmath=387 -o CMakeFiles/cmTC_38eca.dir/src.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c
+error: unknown FP unit '387'
+emcc: error: '/emsdk/upstream/bin/clang -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -DNDEBUG -O2 -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -mfpmath=387 -o CMakeFiles/cmTC_38eca.dir/src.c.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c -c -o CMakeFiles/cmTC_38eca.dir/src.c.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_38eca.dir/build.make:66: CMakeFiles/cmTC_38eca.dir/src.c.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_38eca/fast] Error 2
+
+===== END =====
+
+Determining size of off64_t failed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd2a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd2a2.dir/build.make CMakeFiles/cmTC_dd2a2.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd2a2.dir/OFF64_T.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -DNDEBUG -O2   -o CMakeFiles/cmTC_dd2a2.dir/OFF64_T.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:19:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:20:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:21:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:22:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:23:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:39:10: error: use of undeclared identifier 'off64_t'
+  return SIZE;
+         ^
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+6 errors generated.
+emcc: error: '/emsdk/upstream/bin/clang -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -O2 -o CMakeFiles/cmTC_dd2a2.dir/OFF64_T.c.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c -c -o CMakeFiles/cmTC_dd2a2.dir/OFF64_T.c.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_dd2a2.dir/build.make:66: CMakeFiles/cmTC_dd2a2.dir/OFF64_T.c.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dd2a2/fast] Error 2
+
+/src/build_wasm_no_bulk_memory/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return SIZE;
+}
+
+
+Determining if the _aligned_malloc exist failed with the following output:
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57338/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57338.dir/build.make CMakeFiles/cmTC_57338.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57338.dir/CheckSymbolExists.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion  -DNDEBUG -O2  -DNDEBUG   -o CMakeFiles/cmTC_57338.dir/CheckSymbolExists.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier '_aligned_malloc'
+  return ((int*)(&_aligned_malloc))[argc];
+                  ^
+1 error generated.
+emcc: error: '/emsdk/upstream/bin/clang -DEMSCRIPTEN -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -Xclang -isystem/emsdk/upstream/emscripten/system/include/SDL -target wasm32-unknown-emscripten -D__EMSCRIPTEN_major__=2 -D__EMSCRIPTEN_minor__=0 -D__EMSCRIPTEN_tiny__=10 -D_LIBCPP_ABI_VERSION=2 -Dunix -D__unix -D__unix__ -Werror=implicit-function-declaration --sysroot=/emsdk/upstream/emscripten/system -Xclang -isystem/emsdk/upstream/emscripten/cache/wasm/include -Xclang -iwithsysroot/include/compat -Xclang -iwithsysroot/include/libc -Xclang -iwithsysroot/lib/libc/musl/arch/emscripten -Xclang -iwithsysroot/local/include -Xclang -iwithsysroot/include/SSE -Xclang -iwithsysroot/include/neon -Xclang -iwithsysroot/lib/compiler-rt/include -Xclang -iwithsysroot/lib/libunwind/include -mno-bulk-memory -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -DNDEBUG -O2 -DNDEBUG -o CMakeFiles/cmTC_57338.dir/CheckSymbolExists.c.o -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c -c -o CMakeFiles/cmTC_57338.dir/CheckSymbolExists.c.o' failed (1)
+make[1]: *** [CMakeFiles/cmTC_57338.dir/build.make:66: CMakeFiles/cmTC_57338.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_57338/fast] Error 2
+
+File /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Build output check failed:
+    Regex: 'unknown .*option'
+    Output line: 'warning: unknown warning option '-Wno-cast-function-type', did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]'
+Compilation failed:
+    source file: '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-cast-function-type'
+===== BUILD LOG =====
+Change Dir: /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_61914/fast"
+/usr/bin/make -f CMakeFiles/cmTC_61914.dir/build.make CMakeFiles/cmTC_61914.dir/build
+make[1]: Entering directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61914.dir/src.c.o
+/emsdk/upstream/emscripten/emcc   -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes  -DNDEBUG -O2  -DNDEBUG   -Wno-cast-function-type -o CMakeFiles/cmTC_61914.dir/src.c.o   -c /src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp/src.c:1:8: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma
+       ^
+2 warnings generated.
+Linking C executable cmTC_61914.js
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61914.dir/link.txt --verbose=1
+/emsdk/upstream/emscripten/emcc -s WASM=1 -s USE_PTHREADS=0 "-mno-bulk-memory"   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -Wno-deprecated-enum-enum-conversion -Wno-deprecated-anon-enum-enum-conversion -fdiagnostics-show-option -Qunused-arguments -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-implicit-const-int-float-conversion -Wno-undef -Wno-strict-prototypes  -DNDEBUG -O2  -DNDEBUG    -Wl,--gc-sections  -O2 @CMakeFiles/cmTC_61914.dir/objects1.rsp  -o cmTC_61914.js 
+make[1]: Leaving directory '/src/build_wasm_no_bulk_memory/CMakeFiles/CMakeTmp'
+
+===== END =====
+

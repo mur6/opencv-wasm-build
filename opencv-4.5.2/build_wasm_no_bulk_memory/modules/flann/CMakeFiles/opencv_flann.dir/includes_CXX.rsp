@@ -1,0 +1,1 @@
+-I/src/opencv-4.5.2/modules/flann/include -I/src/build_wasm_no_bulk_memory/modules/flann -I/src/opencv-4.5.2/modules/core/include -isystem /src/build_wasm_no_bulk_memory 
