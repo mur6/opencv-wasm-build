@@ -20,4 +20,4 @@ docker run \
   -v $(pwd):/src \
   -u $(id -u):$(id -g) \
   emscripten/emsdk:2.0.10 \
-  emcmake python3 ./opencv-3.4.14/platforms/js/build_js.py $BUILD_DIR --build_wasm $EXTRA_OPTIONS
+  emcmake python3 ./opencv-4.5.2/platforms/js/build_js.py $BUILD_DIR --build_wasm $EXTRA_OPTIONS
