@@ -1,0 +1,1 @@
+-I/src/opencv-3.4.14/modules/core/include -I/src/build_wasm_no_bulk_memory/modules/core -I/src/opencv-3.4.14/3rdparty/zlib -I/src/build_wasm_no_bulk_memory/3rdparty/zlib -isystem /src/build_wasm_no_bulk_memory 

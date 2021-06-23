@@ -1,0 +1,1 @@
+-I/src/opencv-3.4.14/modules/calib3d/include -I/src/build_wasm/modules/calib3d -I/src/opencv-3.4.14/modules/core/include -I/src/opencv-3.4.14/modules/imgproc/include -I/src/opencv-3.4.14/modules/features2d/include -isystem /src/build_wasm 

@@ -1,0 +1,1 @@
+-I/src/opencv-3.4.14/modules/video/include -I/src/build_wasm/modules/video -I/src/opencv-3.4.14/modules/core/include -I/src/opencv-3.4.14/modules/imgproc/include -isystem /src/build_wasm 
