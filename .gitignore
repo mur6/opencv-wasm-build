@@ -1,2 +1,2 @@
-archives/
+archives/*.tar.gz
 __pycache__/
